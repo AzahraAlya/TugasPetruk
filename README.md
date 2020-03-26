@@ -29,3 +29,22 @@ float sum = 0, max = 0, min = 0;
 cout << "Banyaknya bilangan yang akan diinput :";
 cin >> a;//*
 
+//bikin array dengan panjang a
+float data[a];
+ 
+//minta user input untuk tiap-tiap element
+for(int i=0; i<a; i++) {
+    cout << "Input bilangan ke ";
+    cout << i+1 << " : ";
+    cin >> data[i];
+}
+
+sum = 0;
+float *ptr;
+ptr = data; 
+ 
+cout << "\n data yang anda masukan adalah ";
+max = min = *ptr;
+for(int i=0; i<a; i++) { 
+//*
+
